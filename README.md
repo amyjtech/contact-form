@@ -10,9 +10,11 @@ This goes over the sections of the code you will need to change in order to use 
 ### 🔑 SITE KEYS 
 
 Make sure you change the SITE KEY on the `index.html` at this line:
+
 `<div class="g-recaptcha" style="float: right;" data-sitekey="DATA-SITE-KEY"></div>`
 
 Make sure you change the SECRET KEY on the `contact.php` file at this line:
+
 `$secret = "SECRET-KEY-HERE"; //your recaptcha SECRET KEY`
 
 ### 📧 EMAIL FOR CONTACT FORM
