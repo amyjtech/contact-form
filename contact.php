@@ -4,7 +4,7 @@
 // Secret key: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
 
 $captcha = $_POST["captcha"]; //response data
-$secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"; //your recaptcha SECRET KEY
+$secret = "6LcqqJEcAAAAADJK04BrIr8WMaNPMRK-7TPS8sAC"; //your recaptcha SECRET KEY
 
 //Recaptcha verification and JSON response decode
 $verify = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$captcha), true);
@@ -35,7 +35,7 @@ if ($success == false) {
   echo "Recaptcha Verification Failed";
 } else if ($success == true) {
     //This user is verified by recaptcha
-    if (mail("EMAIL HERE", $subject, $Body, $headers)){
+    if (mail("cdd61461@cuoly.com", $subject, $Body, $headers)){
       //send successful
       echo "Recaptcha Success, Mail Sent Successfully";
     }else{
