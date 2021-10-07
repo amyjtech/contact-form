@@ -1,8 +1,10 @@
 # Contact Form with Google reCAPTCHA
 
-Hosted on https://amyjtech.github.io/contact-form/
+Git Page: https://amyjtech.github.io/contact-form/
 
 > Git pages only supports static pages so the contact form is not functional since it uses .php
+
+Heroku App: https://tact-for.herokuapp.com/
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum in incidunt eaque. A consectetur veritatis laborum officiis consequuntur, ut accusamus accusantium iste possimus dolorum, amet dicta animi alias nihil.
 
@@ -22,14 +24,14 @@ This goes over the sections of the code you will need to change in order to use 
 
 ### 📧 EMAIL FOR CONTACT FORM
 
-You will change the email in this function to the email you would like responses from the form to be sent to. This is located in the contact.php file. The email currently in place is `szy17604@boofx.com`.
+You will change the email in this function to the email you would like responses from the form to be sent to. This is located in the contact.php file. The email currently in place is `uwx97644@boofx.com`.
 
     if ($success == false)
     //This user was not verified by recaptcha
     echo "Recaptcha Verification Failed";
     } else if ($success == true) {
     //This user is verified by recaptcha
-    if (mail("szy17604@boofx.com", $subject, $Body, $headers)){
+    if (mail("uwx97644@boofx.com", $subject, $Body, $headers)){
     //send successful
     echo "Recaptcha Success, Mail Sent Successfully";
     }else{

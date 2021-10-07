@@ -35,7 +35,7 @@ if ($success == false) {
   echo "Recaptcha Verification Failed";
 } else if ($success == true) {
     //This user is verified by recaptcha
-    if (mail("szy17604@boofx.com", $subject, $Body, $headers)){
+    if (mail("uwx97644@boofx.com", $subject, $Body, $headers)){
       //send successful
       echo "Recaptcha Success, Mail Sent Successfully";
     }else{
